@@ -1,2 +1,0 @@
-# Intentionally empty during documentation bootstrap.
-# Runtime dependencies will be added after the application stack is decided.
