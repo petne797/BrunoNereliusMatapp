@@ -1,3 +1,2 @@
-# Test tooling for the supported, network-free test runner.
--r requirements.txt
-pytest==9.1.1
+# Intentionally empty during documentation bootstrap.
+# Development and test dependencies will be added with the implementation stack.
