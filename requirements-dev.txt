@@ -1,2 +1,0 @@
-# Intentionally empty during documentation bootstrap.
-# Development and test dependencies will be added with the implementation stack.
