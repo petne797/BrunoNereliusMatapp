@@ -1,0 +1,8 @@
+# Direct dependencies for the supported application runtime.
+streamlit==1.55.0
+google-genai==1.75.0
+PyYAML==6.0.3
+python-docx==1.2.0
+openpyxl==3.1.5
+pypdf==6.18.1
+python-pptx==1.0.2

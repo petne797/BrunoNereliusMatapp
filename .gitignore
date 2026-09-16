@@ -1,0 +1,54 @@
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+
+# Python tests and tools
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Stable test runner temp directories (normally created in the system temp root)
+projektassistenten-pytest-*/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Office temporary files
+~$*
+
+# Test projects: ignore non-canonical top-level material by default
+/projects/*/*
+
+# Canonical project information and reviewed test fixtures
+!/projects/*/metadata.json
+!/projects/*/Styrdokument/
+!/projects/*/Styrdokument/**
+!/projects/*/Projektplanering/
+!/projects/*/Projektplanering/**
+!/projects/*/Projektgenomförande/
+!/projects/*/Projektgenomförande/**
+!/projects/*/Projektavslut/
+!/projects/*/Projektavslut/**
+!/projects/*/Styrgrupp/
+!/projects/*/Styrgrupp/**
+!/projects/*/Beslut/
+!/projects/*/Beslut/**
+
+# Assistant runtime and generated data
+!/projects/*/AI-utkast/
+/projects/*/AI-utkast/**
+!/projects/*/AI-utkast/.gitkeep
+!/projects/*/Export/
+/projects/*/Export/**
+!/projects/*/Export/.gitkeep
+/projects/*/AI-arbetsyta/**
+
+# Gammalt mög
+archive/
+trash/

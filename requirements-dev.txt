@@ -1,0 +1,3 @@
+# Test tooling for the supported, network-free test runner.
+-r requirements.txt
+pytest==9.1.1
