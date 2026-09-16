@@ -8,6 +8,22 @@ GitHub-repot `petne797/BrunoNereliusMatapp` är permanent sanningskälla för do
 
 Om GitHub-dokumentation, faktiskt repo-tillstånd och tidigare konversationskontext motsäger varandra ska skillnaden redovisas. När GitHub Projects senare etableras kan det vara operativ sanningskälla för backlog, sprinttillhörighet och taskstatus. Repo-dokumentationen förblir sanningskälla för långlivade beslut och principer.
 
+## Projekt- och exekveringskontext
+
+ChatGPT-projektet `Bruno Nerelius Matapp` är online-arbetsytan för Petter och Clara. GitHub-repot `petne797/BrunoNereliusMatapp` är permanent sanningskälla för dokumenterade beslut, kod och faktiskt repo-tillstånd.
+
+Det lokala Codex-projektet för repoarbete ska peka på `C:\programkod\BrunoNereliusMatapp`. Codex-sessioner som ska läsa eller ändra repot ska skapas från detta lokala projekt. Rätt projektnamn eller rätt ChatGPT-projekt innebär inte i sig att Codex arbetar i rätt lokal arbetskatalog.
+
+Före filändringar måste Codex kontrollera:
+
+1. `Get-Location`
+2. `git rev-parse --show-toplevel`
+3. `git remote -v`
+4. `git branch --show-current`
+5. `git status --short`
+
+För Matappen ska Git-root vara `C:\programkod\BrunoNereliusMatapp` och `origin` vara `https://github.com/petne797/BrunoNereliusMatapp.git`. Om kontrollen inte stämmer ska Codex stoppa utan att ändra filer.
+
 ## Roller
 
 - Petter är Product Owner och ansvarar för slutliga prioriteringar, produktbeslut och acceptans.
@@ -44,7 +60,7 @@ Varje sprint får normalt en separat `SPRINT N`-chat. Varje avgränsad implement
 
 ## Codex-bootstrap
 
-En ny Codex-session som ska ändra repot ska minst:
+En ny Codex-session som ska ändra repot ska, efter den obligatoriska kontrollen av projekt- och exekveringskontexten, minst:
 
 1. verifiera arbetskatalog och Git-root;
 2. läsa `AGENTS.md`;
